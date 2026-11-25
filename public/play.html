@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>PartyBox — Controle 🎉</title>
+  <meta name="theme-color" content="#0a0b14" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <div class="play-shell">
+    <header class="play-top">
+      <div style="display:flex;align-items:center;gap:10px">
+        <span style="font-size:1.5rem">🎉</span>
+        <strong style="font-size:1.15rem">PartyBox</strong>
+      </div>
+      <div style="display:flex;align-items:center;gap:8px">
+        <span id="playTimer" class="timer-pill hidden" style="font-size:0.95rem;padding:4px 12px;min-width:52px">00</span>
+        <span id="playMeBadge" style="font-size:0.9rem;color:var(--muted)"></span>
+      </div>
+    </header>
+
+    <div class="error-banner hidden" id="errorBanner"></div>
+
+    <main id="playStage">
+      <div class="play-card">
+        <h2>Entrar na Festa 🎉</h2>
+        <p>Escolha seu avatar e seu apelido para jogar na TV!</p>
+        <div class="avatar-grid" id="avatarGrid"></div>
+        <input class="input-big" id="nameInput" maxlength="18" placeholder="Seu apelido…" autocomplete="off" />
+        <button class="btn btn-primary btn-lg btn-block" id="joinBtn">Entrar no Jogo</button>
+      </div>
+    </main>
+  </div>
+
+  <script src="/play.js"></script>
+</body>
+</html>
